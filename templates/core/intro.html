@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+    Intro
+{% endblock page_title %}
+
+{% block content %}
+    <div class="site-map">
+        <span>IEMU11 > About Us > Intro</span>
+    </div>
+
+    <div class="inside-nav">
+        <ul>
+            <h4>About Us</h4>
+            <li><a href="{% url 'core:intro' %}">Intro</a></li>
+            <li><a href="{% url 'core:greeting' %}">Greeting</a></li>
+            <li><a href="#">Organization</a></li>
+            <li><a href="#">Partners</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <div>
+            <h1>축구, 그 이상의 가치 IEMU11</h1>
+            <img src="#" alt="이미지">
+        </div>
+        <div>
+            <h1>축구, 그 이상의 가치 IEMU11</h1>
+            <img src="#" alt="이미지">
+        </div>
+    </div>
+{% endblock content %}
