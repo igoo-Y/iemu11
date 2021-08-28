@@ -1,7 +1,15 @@
-<h1>IEU11</h1>
-<ul>
-    <li><a href="{% url 'core:intro' %}">About Us</a></li>
-    <li><a href="#">Activities</a></li>
-    <li><a href="#">Join Us</a></li>
-    <li><a href="#">Board</a></li>
-</ul>
+{% load static %}
+<div class="nav">
+    <div class="nav-container">
+        <a class="nav-logo" href="{% url 'core:home' %}">
+            <img src="{% static 'logos/logo.png' %}" alt="" class="nav-logo__img">
+            <h1 class="nav-logo__text">IEU11</h1>
+        </a>
+        <ul class="nav-link">
+            <li class="nav-link__item"><a href="{% url 'core:intro' %}">About Us</a></li>
+            <li class="nav-link__item"><a href="#">Activities</a></li>
+            <li class="nav-link__item"><a href="#">Join Us</a></li>
+            <li class="nav-link__item"><a href="#">Board</a></li>
+        </ul>
+    </div>
+</div>

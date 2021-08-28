@@ -7,45 +7,36 @@ Home
 
 {% block content %}
 
-<div class="main-banner" style="background-position: center; background-image:url(https://tot-tmp.azureedge.net/media/12623/leicester-8dec-heungminson-1.jpg); width: 1680px; height: 960px;"></div>
+{% load static %}
 
-<div class="intro-container">
-    <h2 class="intro-container__title">축구, 그 이상의 가치 지역사회와 함께하는 IEMU11</h2>
-    <div class="intro-container__box">
-        <div class="intro-container__card">
-            <span>교내 리그 SMCL</span>
-            <span>IEMU11은 2011년 첫 개최된 상명챔피언스리그(SMCL)에서 총 6회 우승을 거두며 최다 우승을 기록하고 있습니다.</span>
-            <a href="#">Learn More</a>
+<div class="main-banner">
+    <div class="main-banner__box">
+        <div class="main-banner__text">
+            <span>축구, 그 이상의 가치</span>
+            <span>IEMU11</span>
         </div>
-        <div class="intro-container__card">
-            <span>외부 대회 K7, SUFA, Bepro11</span>
-            <span>2015년 Bepro11 대학선수권대회를 시작으로 SUFA Cup 등 서울권 대학리그 대회에 꾸준히 참가하고 있으며, 최근에는 K7 Division 에 참가해 2020년 조 1위를 거두는 등의 성적을 보여주고 있습니다.</span>
-            <a href="#">Learn More</a>
-        </div>
-        <div class="intro-container__card">
-            <span>사회공헌활동</span>
-            <span>축구, 그 이상의 가치라는 슬로건 하에 모인 IEMU11은 지역 사회 내 홍은청소년문화의집, 홍은종합사회복지관 등 지역 사회의 기관과 협력하고, 자체 봉사활동을 진행하며 대학생으로서 지역 사회와 함께 살아가고 사회 환원을 위한 활동을 매년 지속해오고 있습니다.</span>
-            <a href="#">Learn More</a>
-        </div>
-        <div class="intro-container__card">
-            <span>자체 프로젝트</span>
-            <span>IEMU11에서는 축구, 봉사활동 뿐만 아니라 구성원들의 다양한 아이디어를 존중하고 이를 기반으로 굿즈 제작, 크라우드 펀딩, 공모전 참여, 튜터링 활동 등 다양한 활동을 전개하고 있습니다.</span>
-            <a href="#">Learn More</a>
-        </div>
+        <img src="{% static 'img/main-banner-img.png' %}" alt="" class="main-banner__img">
     </div>
 </div>
 
-<div class="member-container">
-    <div class="player-container">
-        <span>선수단</span>
-        <span>IEMU11의 선수단은 교내대회(SMCL), 외부대회(K7)에서 우수한 성적을 올리기 위해 감독, 코치들의 주도 하에 매주 수요일과 주말을 활용해 훈련하며 팀워크를 다지고 있습니다. 축구를 좋아하는 경영경제대학 학우들은 누구나 IEMU11의 선수단의 일원이 될 수 있습니다.</span>
-        <img src="#" alt="">
+<div class="container">
+    <div class="info">
+        <div class="info__text">
+            <span><strong>Info</strong>mation</span>
+        </div>
+        <div class="info-box">
+            <div class="info-banner">
+                <span>선수단</span>
+                <span>PLAYERS</span>
+                <span>01학번부터 21학번까지,</span>
+                <span>20년 이상의 역사</span>
+            </div>
+            <div class="info-banner"></div>
+            <div class="info-banner"></div>
+        </div>
     </div>
-    <div class="challengers-container">
-        <span>챌린져스</span>
-        <span>경기에 직접 뛰지 않더라도, 챌린져스로 IEMU11에서 활동할 수 있습니다. 챌린져스는 팀 운영, 봉사활동, 자체 프로젝트 공모전 등을 기획하고 진행하며 경기장 밖에서도 활발한 활동을 진행하고 있습니다.</span>
-        <img src="#" alt="">
-    </div>
+    
 </div>
+
 
 {% endblock %}
