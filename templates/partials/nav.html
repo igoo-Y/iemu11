@@ -3,13 +3,21 @@
     <div class="nav-container">
         <a class="nav-logo" href="{% url 'core:home' %}">
             <img src="{% static 'logos/logo.png' %}" alt="" class="nav-logo__img">
-            <h1 class="nav-logo__text">IEU11</h1>
+            <h1 class="nav-logo__text">IEMU11</h1>
         </a>
-        <ul class="nav-link">
-            <li class="nav-link__item"><a href="{% url 'core:intro' %}">About Us</a></li>
-            <li class="nav-link__item"><a href="#">Activities</a></li>
-            <li class="nav-link__item"><a href="#">Join Us</a></li>
-            <li class="nav-link__item"><a href="#">Board</a></li>
-        </ul>
+        <div class="nav-link nav-dropdown">
+            <ul class="nav-link__item nav-dropdown__btn"><a href="{% url 'core:intro' %}">About Us</a>
+                <li class="nav-dropdown__content"><a href="#">Intro</a></li>
+                <li class="nav-dropdown__content"><a href="#">Greeting</a></li>
+                <li class="nav-dropdown__content"><a href="#">Organization</a></li>
+                <li class="nav-dropdown__content"><a href="#">Partners</a></li>
+            </ul>
+            <ul class="nav-link__item nav-dropdown"><a href="#">Activities</a>
+            </ul>
+            <ul class="nav-link__item nav-dropdown"><a href="#">Join Us</a>
+            </ul>
+            <ul class="nav-link__item nav-dropdown"><a href="#">Board</a>
+            </ul>
+        </div>
     </div>
 </div>
