@@ -5,19 +5,43 @@
             <img src="{% static 'logos/logo.png' %}" alt="" class="nav-logo__img">
             <h1 class="nav-logo__text">IEMU11</h1>
         </a>
-        <div class="nav-link nav-dropdown">
-            <ul class="nav-link__item nav-dropdown__btn"><a href="{% url 'core:intro' %}">About Us</a>
-                <li class="nav-dropdown__content"><a href="#">Intro</a></li>
-                <li class="nav-dropdown__content"><a href="#">Greeting</a></li>
-                <li class="nav-dropdown__content"><a href="#">Organization</a></li>
-                <li class="nav-dropdown__content"><a href="#">Partners</a></li>
-            </ul>
-            <ul class="nav-link__item nav-dropdown"><a href="#">Activities</a>
-            </ul>
-            <ul class="nav-link__item nav-dropdown"><a href="#">Join Us</a>
-            </ul>
-            <ul class="nav-link__item nav-dropdown"><a href="#">Board</a>
-            </ul>
+        <div class="nav-link">
+            <div class="nav-link__item dropdown">
+                <a class="dropdown-button" href="{% url 'core:intro' %}">About Us</a>
+                <div class="dropdown-content">
+                    <a href="#">Intro</a>
+                    <a href="#">Greeting</a>
+                    <a href="#">Organization</a>
+                    <a href="#">Partners</a>
+                </div>
+            </div>
+            <div class="nav-link__item dropdown">
+                <a class="dropdown-button" href="#">Activities</a>
+                <div class="dropdown-content">
+                    <a href="#">Intro</a>
+                    <a href="#">Greeting</a>
+                    <a href="#">Organization</a>
+                    <a href="#">Partners</a>
+                </div>
+            </div>
+            <div class="nav-link__item dropdown">
+                <a class="dropdown-button" href="#">Join Us</a>
+                <div class="dropdown-content">
+                    <a href="#">Intro</a>
+                    <a href="#">Greeting</a>
+                    <a href="#">Organization</a>
+                    <a href="#">Partners</a>
+                </div>
+            </div>
+            <div class="nav-link__item dropdown">
+                <a class="dropdown-button" href="#">Board</a>
+                <div class="dropdown-content">
+                    <a href="#">Intro</a>
+                    <a href="#">Greeting</a>
+                    <a href="#">Organization</a>
+                    <a href="#">Partners</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
