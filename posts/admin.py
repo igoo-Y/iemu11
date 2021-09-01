@@ -11,3 +11,5 @@ class PostModelAdmin(admin.ModelAdmin):
         "title",
         "writer",
     )
+
+    list_filter = ("writer",)
