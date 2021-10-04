@@ -5,28 +5,45 @@
 {% endblock page_title %}
 
 {% block content %}
-    <div class="site-map">
-        <span>IEMU11 > About Us > Intro</span>
+
+{% load static %}
+<div class="top">
+    <div class="top-content">
+        <span>축구, 그 이상의 가치 IEMU11</span>
+        <img src="{% static 'img/호날두.png' %}" alt="">
+    </div>
+</div>
+
+<div class="body-nav">
+    <ul class="body-nav__list">
+        <li class="body-nav__item"><a href="#">인사말</a></li>
+        <li class="body-nav__item"><a href="#">조직도</a></li>
+        <li class="body-nav__item"><a href="#">파트너</a></li>
+        <li class="body-nav__item"><a href="#">제안</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="greeting">
+        <span><strong>암탉이 울면 나라가 망한다!</strong> 안녕하세요 홍종호입니다.</span>
+        <div class="greeting-box">
+            <img src="{% static 'img/jongho-profile.png' %}" alt="">
+            <span>
+                멋진 사진은 발로 뛰는 부지런함에서 나온다고 생각합니다.
+                <br><br>
+                사진의 조작법과 보정법에서 그치지 않는, 자연과 시간을 다룰 수 있도록 그리고 나만의 사진 스타일을 찾아 드릴 수 있을 때까지 즐거운 사진놀이를 긍정적인 에너지로 전파 하고 싶습니다.
+                <br><br>
+                코로나 덕택에 작년에 하던일이 조금 잘 안풀려 내 앞가림이나 잘 하게 눈과 귀를 닫아보자라는 생각에모든 SNS어플을 지우고는, 생각보다 불편하지 않아서인지 벌써 시간이 1년이 훌쩍 넘어버렸는데요 본능적인 관종 성향은 어디 안가는지 모두가 어떻게 사는지 궁금해서 슬슬 기어나왔슴니다
+                <br><br>
+                고맙게도 몇몇분께서 죽은줄 알았다고 개인적으로 연락을 주셨는데 밥도 잘 먹고 똥도 잘 싸고 다행히 몹시 잘 지내고 있습니다. 밥도 잘 먹고 똥도 잘 싸게 되었으니 다시 쏘셜네트워킹써비스에 발을 들여보도록 하겠읍니다. 
+                <br><br>
+                모두들 고맙슴니다
+            </span>
+        </div>
     </div>
 
-    <div class="inside-nav">
-        <ul>
-            <h4>About Us</h4>
-            <li><a href="{% url 'core:intro' %}">Intro</a></li>
-            <li><a href="{% url 'core:greeting' %}">Greeting</a></li>
-            <li><a href="#">Organization</a></li>
-            <li><a href="#">Partners</a></li>
-        </ul>
+    <div class="history">
+        
     </div>
-
-    <div>
-        <div>
-            <h1>축구, 그 이상의 가치 IEMU11</h1>
-            <img src="#" alt="이미지">
-        </div>
-        <div>
-            <h1>축구, 그 이상의 가치 IEMU11</h1>
-            <img src="#" alt="이미지">
-        </div>
-    </div>
+</div>
 {% endblock content %}

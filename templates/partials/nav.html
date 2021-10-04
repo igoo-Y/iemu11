@@ -9,10 +9,10 @@
             <div class="nav-link__item dropdown">
                 <a class="dropdown-button" href="{% url 'core:intro' %}">About Us</a>
                 <div class="dropdown-content">
-                    <a href="{% url 'core:intro' %}">소개</a>
-                    <a href="#">인사말</a>
+                    <a href="{% url 'core:intro' %}">인사말</a>
                     <a href="#">조직도</a>
                     <a href="#">파트너</a>
+                    <a href="#">제안</a>
                 </div>
             </div>
             <div class="nav-link__item dropdown">
@@ -34,7 +34,7 @@
             <div class="nav-link__item dropdown">
                 <a class="dropdown-button" href="#">Board</a>
                 <div class="dropdown-content">
-                    <a href="#">공지사항</a>
+                    <a href="{% url 'posts:posts' %}">공지사항</a>
                     <a href="#">봉사안내</a>
                     <a href="#">갤러리</a>
                 </div>

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+    공지사항
+{% endblock page_title %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="top">
+    <div class="top-content">
+        <span>축구, 그 이상의 가치 IEMU11</span>
+        <img src="{% static 'img/호날두.png' %}" alt="">
+    </div>
+</div>
+
+<div class="body-nav">
+    <ul class="body-nav__list">
+        <li class="body-nav__item"><a href="#">소개글</a></li>
+        <li class="body-nav__item"><a href="#">인사말</a></li>
+        <li class="body-nav__item"><a href="#">조직도</a></li>
+        <li class="body-nav__item"><a href="#">파트너</a></li>
+        <li class="body-nav__item"><a href="#">제안</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class=""></div>
+</div>
+
+{% endblock %}
